@@ -1,0 +1,45 @@
+main{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    min-height: 90vh;
+}
+
+main .cont{
+    background-color: white;
+    padding: 5%;
+    margin: 0;
+    padding-bottom: 20vh;
+}
+
+main .icons{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 5vw;
+
+    background-color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+main .icons li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main .icons img{
+    width:10vw;
+    height:10vw;
+}
+
+@media screen and (min-width:900px){
+    main .icons img{
+        width:3vw;
+        height:3vw;
+    }
+}
