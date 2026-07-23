@@ -1,0 +1,47 @@
+/* MAIN CONTENT  */
+
+/* RIGHT SIDE  */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.LeftSide p {
+    text-align: justify;
+    width: 80%;
+    line-height: 2rem;
+    background-color: white;
+    padding: 10%;
+    box-shadow: 1.5vw 1.5vw 0 black;
+}
+
+.RightSide img{
+    width: 20vh;
+    height:20vh;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 5vh;
+}
+
+@media screen and (min-width:900px) {
+
+    main{
+        display: flex;
+        align-items: center;
+    }
+
+    .LeftSide p{
+        width: 70%;
+        justify-self: center;
+        line-height: 2.5rem;
+        padding: 3%;
+
+        font-size: 1.5rem;
+    }
+
+    .RightSide img {
+        width: 30vh;
+        height:30vh;
+    }
+}

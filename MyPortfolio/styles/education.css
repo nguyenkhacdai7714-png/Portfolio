@@ -1,0 +1,53 @@
+main .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top:5vh;
+    align-items: center;
+}
+
+main .grid .child{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 1vw 1vw 0 black;
+    width: 80%;
+}
+
+@media screen and (min-width:1050px){
+    main .grid{
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0;
+        padding-left: 4vw;
+    }
+
+    .child h2{
+        font-size:3rem;
+        margin: 1rem 0 0 0;
+    }
+    .child h4{
+        font-size: 1.5rem;
+    }
+    .child h5{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .child li{
+        font-size: 1.7rem;
+    }
+
+
+    .child{
+        height: 90%;
+    }
+
+    .left {
+        grid-row: span 5 / span 5;
+    }
+
+    .right {
+        grid-row: span 5 / span 5;
+    }
+}
